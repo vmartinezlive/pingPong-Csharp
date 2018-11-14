@@ -11,7 +11,19 @@ namespace Game.Tests
     public void PingPong_NumberDisvibleByThree_True()
     {
       PingPongGame testPingPongGame = new PingPongGame();
-      Assert.AreEqual(true, testPingPongGame.PingPong(4));
+      Assert.AreEqual(true, testPingPongGame.PingPong(3));
+    }
+    [TestMethod]
+    public void PingPongFive_NumberDisvibleByFive_true()
+    {
+      PingPongGame testPingPongGame = new PingPongGame();
+      Assert.AreEqual(true, testPingPongGame.PingPongFive(5));
+    }
+    [TestMethod]
+    public void PingPongFiveThree_NumberDisvibleByFiveThree_true()
+    {
+      PingPongGame testPingPongGame = new PingPongGame();
+      Assert.AreEqual(true, testPingPongGame.PingPongFiveThree(15));
     }
 
   }
